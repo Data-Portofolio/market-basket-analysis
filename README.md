@@ -21,11 +21,10 @@
         <img src='https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white'/>
  </p>
 
-
+</h1>
 <details>
   <summary>Definition</summary>
- <br>
-  
+ 
 ### Market Basket Analysis (MBA)
 adalah teknik analisis data yang digunakan untuk mengidentifikasi pola pembelian atau asosiasi antara produk atau layanan yang dibeli oleh pelanggan. Tujuannya adalah untuk memahami hubungan antara item yang sering dibeli bersama-sama sehingga bisnis dapat mengambil keputusan yang lebih baik terkait dengan penataan produk, promosi, dan strategi penjualan.
 
@@ -47,7 +46,32 @@ Langkah-langkah umum dalam Market Basket Analysis:
 
 7. **Interpretasi Hasil:** Menganalisis aturan asosiasi yang dihasilkan dan mengambil tindakan berdasarkan temuan tersebut, seperti mengatur penempatan produk di toko, membuat bundel produk, atau merancang kampanye promosi yang lebih efektif.
 
-Market Basket Analysis telah menjadi alat yang berguna untuk meningkatkan strategi pemasaran dan penjualan. Dengan memahami pola pembelian pelanggan, bisnis dapat meningkatkan pengalaman pelanggan, mengoptimalkan stok, dan merancang strategi promosi yang lebih efektif.
+### Metrics of MBA
+
+Dalam konteks Market Basket Analysis, support, confidence, dan lift adalah konsep-konsep yang digunakan untuk mengukur dan mengevaluasi aturan asosiasi yang dihasilkan dari analisis data transaksi. Mari kita jelaskan masing-masing konsep tersebut:
+
+1. **Support:**
+   - **Definisi:** Support mengukur seberapa sering suatu itemset muncul dalam dataset transaksi.
+   - **Perhitungan:** Jumlah transaksi yang mengandung itemset tertentu dibagi dengan total jumlah transaksi.
+   - **Contoh:** Jika kita ingin mengukur support untuk itemset {A, B} dan ada 100 transaksi, di mana itemset ini muncul dalam 30 transaksi, maka supportnya adalah 30/100 = 0,3 atau 30%.
+
+   - **Interpretasi:** Support membantu mengidentifikasi seberapa umum atau populer suatu kombinasi item dalam dataset. Kombinasi dengan support tinggi cenderung lebih bermanfaat dalam konteks analisis asosiasi.
+
+2. **Confidence:**
+   - **Definisi:** Confidence mengukur seberapa sering aturan asosiasi benar.
+   - **Perhitungan:** Jumlah transaksi yang mengandung itemset yang mencakup kedua item dalam aturan asosiasi dibagi dengan jumlah transaksi yang mengandung item yang muncul di sisi kiri aturan.
+   - **Contoh:** Jika kita memiliki aturan {A} => {B} dan confidence-nya adalah 0,8, ini berarti dalam 80% transaksi yang mengandung A, B juga ada.
+
+   - **Interpretasi:** Confidence membantu mengevaluasi sejauh mana aturan asosiasi dapat diandalkan. Aturan dengan confidence tinggi menunjukkan bahwa pembelian item di satu sisi aturan cenderung diikuti oleh pembelian item di sisi lainnya.
+
+3. **Lift:**
+   - **Definisi:** Lift mengukur seberapa lebih mungkin dua item dibeli bersama-sama daripada jika mereka dibeli secara independen.
+   - **Perhitungan:** (Support untuk itemset {A, B}) / (Support untuk A * Support untuk B)
+   - **Contoh:** Jika lift > 1, ini menunjukkan bahwa pembelian A dan B bersama-sama lebih sering daripada pembelian secara independen.
+
+   - **Interpretasi:** Lift membantu menentukan apakah ada hubungan yang signifikan antara dua item atau apakah kombinasi tersebut lebih acak. Lift = 1 berarti tidak ada asosiasi yang signifikan, lift > 1 menunjukkan asosiasi yang positif, sementara lift < 1 menunjukkan asosiasi yang negatif.
+
+Dalam prakteknya, analisis support, confidence, dan lift membantu bisnis membuat keputusan informasional terkait penempatan produk, strategi harga, atau promosi untuk meningkatkan penjualan dan kepuasan pelanggan.
   
 </details>
 
