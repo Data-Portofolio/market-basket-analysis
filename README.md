@@ -25,7 +25,7 @@
 <details>
   <summary>Definition</summary>
  
-### Market Basket Analysis (MBA)
+## Market Basket Analysis (MBA)
 adalah teknik analisis data yang digunakan untuk mengidentifikasi pola pembelian atau asosiasi antara produk atau layanan yang dibeli oleh pelanggan. Tujuannya adalah untuk memahami hubungan antara item yang sering dibeli bersama-sama sehingga bisnis dapat mengambil keputusan yang lebih baik terkait dengan penataan produk, promosi, dan strategi penjualan. Dalam prakteknya, analisis support, confidence, dan lift membantu bisnis membuat keputusan informasional terkait penempatan produk, strategi harga, atau promosi untuk meningkatkan penjualan dan kepuasan pelanggan.
 
 Proses Market Basket Analysis melibatkan penggunaan algoritma data mining, terutama algoritma asosiasi, yang membantu mengidentifikasi aturan asosiasi antara item. Contohnya, jika seseorang membeli kopi, kemungkinan besar dia juga akan membeli gula. Atau, jika pelanggan membeli susu, mungkin dia juga akan membeli sereal.
@@ -46,13 +46,13 @@ Langkah-langkah umum dalam Market Basket Analysis:
 
 7. **Interpretasi Hasil:** Menganalisis aturan asosiasi yang dihasilkan dan mengambil tindakan berdasarkan temuan tersebut, seperti mengatur penempatan produk di toko, membuat bundel produk, atau merancang kampanye promosi yang lebih efektif.
 
-### Metrics of MBA
+## Metrics of MBA
 
 Dalam konteks Market Basket Analysis, support, confidence, dan lift adalah konsep-konsep yang digunakan untuk mengukur dan mengevaluasi aturan asosiasi yang dihasilkan dari analisis data transaksi. Mari kita jelaskan masing-masing konsep tersebut:
 
 Tentu, mari tambahkan definisi untuk setiap metrik:
 
-1. **Support:**
+### 1. Support
    - **Definisi:** Support mengukur seberapa sering suatu itemset muncul dalam dataset transaksi.
    - **Contoh Perhitungan:**
      - Jumlah transaksi yang mencakup pembelian kopi (A) dan gula (B): 50 transaksi.
@@ -62,7 +62,7 @@ Tentu, mari tambahkan definisi untuk setiap metrik:
    - **Interpretasi:**
      - Support 25% menunjukkan bahwa 25% dari seluruh transaksi melibatkan pembelian kopi dan gula bersama-sama. Ini menunjukkan popularitas atau keberadaan kombinasi ini dalam dataset.
 
-2. **Confidence:**
+### 2. Confidence
    - **Definisi:** Confidence mengukur seberapa sering aturan asosiasi benar.
    - **Contoh Perhitungan:**
      - Jumlah transaksi yang mencakup pembelian kopi (A) dan diikuti oleh pembelian gula (B): 40 transaksi.
@@ -72,7 +72,7 @@ Tentu, mari tambahkan definisi untuk setiap metrik:
    - **Interpretasi:**
      - Confidence 67% menunjukkan bahwa ketika pelanggan membeli kopi, ada 67% kemungkinan mereka juga akan membeli gula. Ini menunjukkan seberapa kuat asosiasi antara pembelian kopi dan gula.
 
-3. **Lift:**
+### 3. Lift
    - **Definisi:** Lift mengukur seberapa lebih mungkin dua item dibeli bersama-sama daripada jika mereka dibeli secara independen. Lift membantu menentukan apakah ada hubungan yang signifikan antara dua item atau apakah kombinasi tersebut lebih acak. Lift = 1 berarti tidak ada asosiasi yang signifikan, lift > 1 menunjukkan asosiasi yang positif, sementara lift < 1 menunjukkan asosiasi yang negatif.
    - **Contoh Perhitungan:**
      - Support untuk {A, B} = 0,25 (seperti pada contoh support).
